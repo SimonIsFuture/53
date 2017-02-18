@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="three.js"></script>
+</head>
+<body>
+
+<canvas   class="canvas_clock" hour="11" minute="55">
+</canvas>
+<canvas   class="canvas_clock" hour="15" hour="{{$hour}}" minute="17"></canvas>
+<canvas class="canvas_angle"angle="90"></canvas>
+<canvas class="canvas_angle"angle="150"></canvas>
+<canvas id="main_canvas_1" class="canvas_obj_main"></canvas>
+<canvas class="canvas_obj_child" parentCanvas="main_canvas_1" direction="front"></canvas>
+<canvas class="canvas_obj_child" parentCanvas="main_canvas_1" direction="left"></canvas>
+<canvas id="main_canvas_2" class="canvas_obj_main"></canvas>
+<canvas class="canvas_obj_child" parentCanvas="main_canvas_2" direction="front"></canvas>
+<canvas class="canvas_obj_child" parentCanvas="main_canvas_2" direction="left"></canvas>
+<script src="gen_clock.js"></script>
+<script src="gen_angle.js"></script>
+<script src="gen_obj.js"></script>
+</body>
+</html>
